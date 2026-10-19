@@ -1,0 +1,56 @@
+<resources>
+    <!--
+        AYNEHA design system — mirrors the "Clavier Songhay / AYNEHA Keyboard" CSS palette
+        exactly, so any future screen/widget can be styled by referencing the matching token
+        below instead of a raw hex value.
+    -->
+
+    <!-- background: app/keyboard background (deep near-black) -->
+    <color name="primary_background">#0D1117</color>
+    <color name="keyboard_bg">#0D1117</color>
+
+    <!-- foreground: primary text/icon color on background or card surfaces -->
+    <color name="text_primary">#E6EDF3</color>
+
+    <!-- card / card-foreground: standard key & panel surface -->
+    <color name="composition_bg">#161B22</color>
+    <color name="key_bg_default">#161B22</color>
+
+    <!-- popover / popover-foreground: long-press variant bubble -->
+    <color name="popup_bg">#161B22</color>
+    <color name="popup_text">#E6EDF3</color>
+
+    <!-- primary / primary-foreground: orange accent (Enter key, links, focus ring) -->
+    <color name="key_bg_special">#FF9F1C</color>
+    <color name="text_on_special">#0D1117</color>
+    <color name="accent_color">#FF9F1C</color>
+    <color name="popup_selected_bg">#FF9F1C</color>
+    <color name="ring_color">#FF9F1C</color>
+
+    <!-- secondary / secondary-foreground: special keys (Shift, ?123, Effacer, =\<, emoji) -->
+    <color name="key_bg_action">#21262D</color>
+    <color name="secondary_foreground">#C9D1D9</color>
+
+    <!-- muted / muted-foreground: secondary UI chrome / inactive or helper text -->
+    <color name="muted">#21262D</color>
+    <color name="muted_foreground">#8B949E</color>
+
+    <!-- accent: hover/press feedback. Kept distinct from secondary (#21262D, identical
+         value in the source palette) so pressing an already-secondary-colored key still shows
+         a visible highlight; border is the next step up in the same palette. -->
+    <color name="key_bg_pressed">#30363D</color>
+    <color name="accent_foreground">#E6EDF3</color>
+
+    <!-- destructive / destructive-foreground: reserved for future alerts -->
+    <color name="destructive">#DA3633</color>
+    <color name="destructive_foreground">#F0F6FC</color>
+
+    <!-- border / input -->
+    <color name="border_color">#30363D</color>
+    <color name="input_color">#30363D</color>
+
+    <!-- Warm orange used for the AYNEHA-script mention and the user's pseudo on shared
+         images — chosen for strong contrast/visibility on the white composition background,
+         distinct from accent_color (#FF9F1C) used across the rest of the app's UI chrome. -->
+    <color name="watermark_orange">#FF6600</color>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_background"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings_title"
+        android:textColor="@color/accent_color"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Vibration au toucher"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp" />
+
+        <Switch
+            android:id="@+id/switchHaptic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkTimestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:checked="true"
+        android:text="@string/settings_timestamp_label"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="@string/settings_pseudo_label"
+        android:textColor="@color/muted_foreground"
+        android:textSize="13sp" />
+
+    <EditText
+        android:id="@+id/editPseudo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_composition_zone"
+        android:hint="@string/settings_pseudo_hint"
+        android:textColorHint="@color/muted_foreground"
+        android:inputType="text"
+        android:maxLength="20"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="#FF000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnSystemSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/accent_color"
+        android:text="@string/enable_keyboard"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:layout_marginTop="24dp"
+        android:paddingBottom="8dp"
+        android:text="@string/by_maigus_credit"
+        android:textColor="@color/muted_foreground"
+        android:textSize="12sp" />
+
+</LinearLayout>

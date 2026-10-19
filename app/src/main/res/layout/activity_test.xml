@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@color/primary_background"
+    android:orientation="vertical">
+
+    <!-- Share bar: a single button that renders the composition zone's current text as a
+         .jpg image and hands it to the system share sheet (see AynehaShareImage). Kept
+         LTR so the icon stays pinned to a fixed corner regardless of RTL content below. -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:gravity="end|center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp">
+
+        <ImageButton
+            android:id="@+id/btnShare"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/share_button_desc"
+            android:src="@drawable/ic_share"
+            android:tint="@color/accent_color" />
+    </LinearLayout>
+
+    <!-- Enlarged full-screen composition/test zone, RTL, right-aligned like N'Ko/Arabic.
+         layoutDirection="rtl" on this subtree makes "start" resolve to the right regardless
+         of the device/app locale, so typed characters are appended and grow from right to
+         left, matching the keyboard's own right-to-left key placement. -->
+    <EditText
+        android:id="@+id/compositionZone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_composition_zone"
+        android:padding="20dp"
+        android:gravity="top|start"
+        android:textDirection="rtl"
+        android:textAlignment="viewStart"
+        android:textColor="#FF000000"
+        android:textColorHint="@color/muted_foreground"
+        android:textSize="46.8sp"
+        android:textCursorDrawable="@drawable/cursor_accent"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:hint=" …" />
+
+    <!-- Toolbar: réglages + bascule symboles/pavé numérique/lettres — pinned above the key
+         grid, same as the mockup, populated in code (see TestActivity). -->
+    <FrameLayout
+        android:id="@+id/toolbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layoutDirection="ltr"
+        android:background="@color/keyboard_bg" />
+
+    <!-- Embedded keyboard, used directly (bypasses the system IME) so the writing system
+         can be tried without switching the device's default keyboard. Explicitly LTR: the
+         keyboard view computes its own right-to-left key placement manually and must not be
+         mirrored a second time by inheriting layoutDirection="rtl" from the root above. -->
+    <FrameLayout
+        android:id="@+id/keyboardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layoutDirection="ltr"
+        android:background="@color/keyboard_bg" />
+
+</LinearLayout>

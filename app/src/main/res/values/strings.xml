@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AYNEHA Keyboard</string>
+    <string name="test_zone_title">Zone de test AYNEHA</string>
+    <string name="settings_title">Réglages AYNEHA</string>
+    <string name="enable_keyboard">Activer le clavier AYNEHA</string>
+    <string name="test_keyboard">Tester le clavier</string>
+    <string name="open_settings">Réglages</string>
+    <string name="onboarding_text">Système d\'écriture AYNEHA — clavier Songhay, disposition 10-10-7, pur RTL.</string>
+    <string name="share_button_desc">Partager le texte en image</string>
+    <string name="share_chooser_title">Partager en AYNEHA</string>
+    <string name="share_empty_warning">Écris d\'abord un texte à partager</string>
+    <string name="by_maigus_credit">By MAIGUS</string>
+    <string name="privacy_button_desc">Confidentialité</string>
+    <string name="privacy_title">Confidentialité</string>
+    <string name="privacy_body">AYNEHA Keyboard ne collecte, ne stocke et ne transmet aucune donnée personnelle.\n\nAucun compte, aucun serveur : le clavier fonctionne entièrement sur votre appareil. Aucune frappe, aucun texte saisi ou composé n\'est enregistré, envoyé, ni partagé avec qui que ce soit sans votre action explicite.\n\nFonction Partager : quand vous utilisez le bouton Partager, une image du texte est créée temporairement sur votre appareil, uniquement pour être transmise à l\'application de votre choix (WhatsApp, Instagram, etc.). Cette image n\'est ni conservée ni envoyée ailleurs par AYNEHA Keyboard.\n\nAucune publicité, aucun traceur, aucune bibliothèque d\'analyse tierce.\n\nLogiciel libre : AYNEHA Keyboard est un logiciel libre, développé par MAIGUS avec l\'aide d\'outils d\'IA (Claude, Anthropic). Il est publié sous licence GPL v3 ou ultérieure : vous pouvez l\'utiliser, l\'étudier, le modifier et le partager. Toute version modifiée distribuée doit rester libre, sous la même licence. Police : SIL Open Font License 1.1. Code source : github.com/maigus223/ayneha-keyboard\n\nDéveloppé par MAIGUS : gwokmt2q@duck.com</string>
+    <string name="font_support_warning">Ton téléphone n\'affiche pas encore AYNEHA nativement. Utilise toujours le bouton Partager pour envoyer un texte lisible par tous.</string>
+    <string name="settings_timestamp_label">Horodatage sur les images partagées</string>
+    <string name="settings_pseudo_label">Pseudo affiché sur les images partagées (20 caractères max)</string>
+    <string name="settings_pseudo_hint">Ton pseudo</string>
+</resources>

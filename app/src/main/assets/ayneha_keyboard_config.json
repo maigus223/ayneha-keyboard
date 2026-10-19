@@ -1,0 +1,1200 @@
+{
+  "app_architecture": {
+    "screen_layout": {
+      "top_section": {
+        "id": "composition_zone",
+        "description": "Zone de composition supérieure en RTL pur (comportement identique au N'Ko ou à l'Arabe).",
+        "type": "text_editor_canvas",
+        "direction": "rtl",
+        "text_alignment": "right",
+        "font": {
+          "family": "AYNEHA",
+          "file": "ayneha_pro.ttf",
+          "version": "3.0",
+          "role": "transition (ancienne plage U+E000-E061 + nouvelle plage U+10FF7C-U+10FFDD)"
+        },
+        "features": [
+          "live_text_rendering",
+          "combining_accents_support",
+          "glyph_preview",
+          "copy_paste_actions"
+        ]
+      },
+      "bottom_section": {
+        "id": "keyboard_zone",
+        "description": "Clavier virtuel Android/Web (IME) positionné en bas de l'écran avec rendu physique RTL strict.",
+        "layout_ref": "layout_views"
+      }
+    },
+    "ui_theme": {
+      "name": "AYNEHA System Theme",
+      "colors": {
+        "primary_background": "#F4F6F8",
+        "composition_bg": "#FFFFFF",
+        "keyboard_bg": "#E3E8EC",
+        "key_bg_default": "#FFFFFF",
+        "key_bg_action": "#CFD8DC",
+        "key_bg_pressed": "#B0BEC5",
+        "text_primary": "#1A252C",
+        "accent_color": "#00838F"
+      },
+      "styling": {
+        "key_corner_radius_dp": 6,
+        "key_elevation_dp": 2,
+        "font_family_keyboard": "AYNEHA"
+      }
+    }
+  },
+  "keyboard_metadata": {
+    "name": "AYNEHA Songhay Keyboard",
+    "id": "ayneha_songhay_rtl",
+    "version": "3.1.0",
+    "author": "AYNEHA Project",
+    "direction": "rtl",
+    "script_family": "pure_rtl_cursive_like",
+    "behaviour_model": "NKO_ARABIC_PURE_RTL",
+    "total_glyphs": 98,
+    "pua_range": {
+      "start": "U+10FF7C",
+      "end": "U+10FFDD"
+    },
+    "legacy_pua_range": {
+      "start": "U+E000",
+      "end": "U+E061"
+    },
+    "description": "Système d'écriture AYNEHA : Pure RTL (comme le N'Ko et l'Arabe). Premier élément de chaque rangée = touche située physiquement à l'EXTRÊME DROITE de l'écran."
+  },
+  "features": {
+    "rtl_support": true,
+    "text_direction": "right-to-left",
+    "cursor_behavior": "rtl_biDi_override",
+    "long_press_popups": true,
+    "haptic_feedback": true,
+    "key_preview": true,
+    "layouts": [
+      "alphabet",
+      "symbols_page1",
+      "numpad",
+      "emoji"
+    ]
+  },
+  "layout_views": {
+    "alphabet": {
+      "title": "Clavier Principal AYNEHA RTL (Format 10-10-7)",
+      "direction": "rtl",
+      "rendering_rule": "Render items in array from RIGHT to LEFT on screen.",
+      "rows": [
+        {
+          "row_index": 1,
+          "visual_order": "RIGHT_TO_LEFT",
+          "description": "Index 0 = Extrême Droite (A). Index 9 = Extrême Gauche (W).",
+          "keys": [
+            {
+              "label": "A",
+              "pua": "U+10FF9C",
+              "pua_utf16": "\uDBFF\uDF9C",
+              "long_press_variants": [
+                {
+                  "label": "AA",
+                  "pua": "U+10FFA1",
+                  "pua_utf16": "\uDBFF\uDFA1"
+                },
+                {
+                  "label": "Ã",
+                  "pua": "U+10FFA2",
+                  "pua_utf16": "\uDBFF\uDFA2"
+                }
+              ]
+            },
+            {
+              "label": "F",
+              "pua": "U+10FF89",
+              "pua_utf16": "\uDBFF\uDF89",
+              "long_press_variants": [
+                {
+                  "label": "FF",
+                  "pua": "U+10FFB3",
+                  "pua_utf16": "\uDBFF\uDFB3"
+                },
+                {
+                  "label": "F°",
+                  "pua": "U+10FFB4",
+                  "pua_utf16": "\uDBFF\uDFB4"
+                }
+              ]
+            },
+            {
+              "label": "E",
+              "pua": "U+10FF9D",
+              "pua_utf16": "\uDBFF\uDF9D",
+              "long_press_variants": [
+                {
+                  "label": "EE",
+                  "pua": "U+10FFA3",
+                  "pua_utf16": "\uDBFF\uDFA3"
+                },
+                {
+                  "label": "Ẽ",
+                  "pua": "U+10FFA4",
+                  "pua_utf16": "\uDBFF\uDFA4"
+                },
+                {
+                  "label": "È",
+                  "pua": "U+10FFA5",
+                  "pua_utf16": "\uDBFF\uDFA5"
+                }
+              ]
+            },
+            {
+              "label": "O",
+              "pua": "U+10FF9F",
+              "pua_utf16": "\uDBFF\uDF9F",
+              "long_press_variants": [
+                {
+                  "label": "OO",
+                  "pua": "U+10FFA8",
+                  "pua_utf16": "\uDBFF\uDFA8"
+                },
+                {
+                  "label": "Õ",
+                  "pua": "U+10FFA9",
+                  "pua_utf16": "\uDBFF\uDFA9"
+                },
+                {
+                  "label": "Ò",
+                  "pua": "U+10FFAA",
+                  "pua_utf16": "\uDBFF\uDFAA"
+                }
+              ]
+            },
+            {
+              "label": "P",
+              "pua": "U+10FF87",
+              "pua_utf16": "\uDBFF\uDF87",
+              "long_press_variants": [
+                {
+                  "label": "PP",
+                  "pua": "U+10FFAF",
+                  "pua_utf16": "\uDBFF\uDFAF"
+                },
+                {
+                  "label": "P°",
+                  "pua": "U+10FFB0",
+                  "pua_utf16": "\uDBFF\uDFB0"
+                }
+              ]
+            },
+            {
+              "label": "I",
+              "pua": "U+10FF9E",
+              "pua_utf16": "\uDBFF\uDF9E",
+              "long_press_variants": [
+                {
+                  "label": "II",
+                  "pua": "U+10FFA6",
+                  "pua_utf16": "\uDBFF\uDFA6"
+                },
+                {
+                  "label": "Ĩ",
+                  "pua": "U+10FFA7",
+                  "pua_utf16": "\uDBFF\uDFA7"
+                }
+              ]
+            },
+            {
+              "label": "S",
+              "pua": "U+10FF90",
+              "pua_utf16": "\uDBFF\uDF90",
+              "long_press_variants": [
+                {
+                  "label": "SS",
+                  "pua": "U+10FFC1",
+                  "pua_utf16": "\uDBFF\uDFC1"
+                },
+                {
+                  "label": "S°",
+                  "pua": "U+10FFC2",
+                  "pua_utf16": "\uDBFF\uDFC2"
+                }
+              ]
+            },
+            {
+              "label": "TS",
+              "pua": "U+10FF93",
+              "pua_utf16": "\uDBFF\uDF93",
+              "long_press_variants": [
+                {
+                  "label": "TSTS",
+                  "pua": "U+10FFC6",
+                  "pua_utf16": "\uDBFF\uDFC6"
+                }
+              ]
+            },
+            {
+              "label": "L",
+              "pua": "U+10FF8E",
+              "pua_utf16": "\uDBFF\uDF8E",
+              "long_press_variants": [
+                {
+                  "label": "LL",
+                  "pua": "U+10FFBD",
+                  "pua_utf16": "\uDBFF\uDFBD"
+                },
+                {
+                  "label": "L°",
+                  "pua": "U+10FFBE",
+                  "pua_utf16": "\uDBFF\uDFBE"
+                }
+              ]
+            },
+            {
+              "label": "W",
+              "pua": "U+10FF8A",
+              "pua_utf16": "\uDBFF\uDF8A",
+              "long_press_variants": [
+                {
+                  "label": "WW",
+                  "pua": "U+10FFB5",
+                  "pua_utf16": "\uDBFF\uDFB5"
+                },
+                {
+                  "label": "W°",
+                  "pua": "U+10FFB6",
+                  "pua_utf16": "\uDBFF\uDFB6"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row_index": 2,
+          "visual_order": "RIGHT_TO_LEFT",
+          "description": "Index 0 = Extrême Droite (A). Index 9 = Extrême Gauche (Σ).",
+          "keys": [
+            {
+              "label": "H",
+              "pua": "U+10FF9A",
+              "pua_utf16": "\uDBFF\uDF9A",
+              "long_press_variants": []
+            },
+            {
+              "label": "M",
+              "pua": "U+10FF88",
+              "pua_utf16": "\uDBFF\uDF88",
+              "long_press_variants": [
+                {
+                  "label": "MM",
+                  "pua": "U+10FFB1",
+                  "pua_utf16": "\uDBFF\uDFB1"
+                },
+                {
+                  "label": "M°",
+                  "pua": "U+10FFB2",
+                  "pua_utf16": "\uDBFF\uDFB2"
+                }
+              ]
+            },
+            {
+              "label": "N",
+              "pua": "U+10FF8D",
+              "pua_utf16": "\uDBFF\uDF8D",
+              "long_press_variants": [
+                {
+                  "label": "NN",
+                  "pua": "U+10FFBB",
+                  "pua_utf16": "\uDBFF\uDFBB"
+                },
+                {
+                  "label": "N°",
+                  "pua": "U+10FFBC",
+                  "pua_utf16": "\uDBFF\uDFBC"
+                }
+              ]
+            },
+            {
+              "label": "B",
+              "pua": "U+10FF86",
+              "pua_utf16": "\uDBFF\uDF86",
+              "long_press_variants": [
+                {
+                  "label": "BB",
+                  "pua": "U+10FFAD",
+                  "pua_utf16": "\uDBFF\uDFAD"
+                },
+                {
+                  "label": "B°",
+                  "pua": "U+10FFAE",
+                  "pua_utf16": "\uDBFF\uDFAE"
+                }
+              ]
+            },
+            {
+              "label": "T",
+              "pua": "U+10FF8C",
+              "pua_utf16": "\uDBFF\uDF8C",
+              "long_press_variants": [
+                {
+                  "label": "TT",
+                  "pua": "U+10FFB9",
+                  "pua_utf16": "\uDBFF\uDFB9"
+                },
+                {
+                  "label": "T°",
+                  "pua": "U+10FFBA",
+                  "pua_utf16": "\uDBFF\uDFBA"
+                }
+              ]
+            },
+            {
+              "label": "K",
+              "pua": "U+10FF99",
+              "pua_utf16": "\uDBFF\uDF99",
+              "long_press_variants": [
+                {
+                  "label": "KK",
+                  "pua": "U+10FFCF",
+                  "pua_utf16": "\uDBFF\uDFCF"
+                },
+                {
+                  "label": "K°",
+                  "pua": "U+10FFD0",
+                  "pua_utf16": "\uDBFF\uDFD0"
+                }
+              ]
+            },
+            {
+              "label": "R",
+              "pua": "U+10FF8F",
+              "pua_utf16": "\uDBFF\uDF8F",
+              "long_press_variants": [
+                {
+                  "label": "RR",
+                  "pua": "U+10FFBF",
+                  "pua_utf16": "\uDBFF\uDFBF"
+                },
+                {
+                  "label": "R°",
+                  "pua": "U+10FFC0",
+                  "pua_utf16": "\uDBFF\uDFC0"
+                }
+              ]
+            },
+            {
+              "label": "U",
+              "pua": "U+10FFA0",
+              "pua_utf16": "\uDBFF\uDFA0",
+              "long_press_variants": [
+                {
+                  "label": "UU",
+                  "pua": "U+10FFAB",
+                  "pua_utf16": "\uDBFF\uDFAB"
+                },
+                {
+                  "label": "Ũ",
+                  "pua": "U+10FFAC",
+                  "pua_utf16": "\uDBFF\uDFAC"
+                }
+              ]
+            },
+            {
+              "label": "D",
+              "pua": "U+10FF8B",
+              "pua_utf16": "\uDBFF\uDF8B",
+              "long_press_variants": [
+                {
+                  "label": "DD",
+                  "pua": "U+10FFB7",
+                  "pua_utf16": "\uDBFF\uDFB7"
+                },
+                {
+                  "label": "D°",
+                  "pua": "U+10FFB8",
+                  "pua_utf16": "\uDBFF\uDFB8"
+                }
+              ]
+            },
+            {
+              "label": "Σ",
+              "pua": "U+10FF92",
+              "pua_utf16": "\uDBFF\uDF92",
+              "long_press_variants": [
+                {
+                  "label": "ΣΣ",
+                  "pua": "U+10FFC5",
+                  "pua_utf16": "\uDBFF\uDFC5"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "row_index": 3,
+          "visual_order": "RIGHT_TO_LEFT",
+          "description": "Index 0 = Extrême Droite (Effacer ⌦). Index 8 = Extrême Gauche (Entrée/Retour ↴).",
+          "keys": [
+            {
+              "type": "action",
+              "action": "backspace",
+              "label": "⌦",
+              "unicode": null,
+              "width": 1.25
+            },
+            {
+              "label": "Z",
+              "pua": "U+10FF91",
+              "pua_utf16": "\uDBFF\uDF91",
+              "long_press_variants": [
+                {
+                  "label": "ZZ",
+                  "pua": "U+10FFC3",
+                  "pua_utf16": "\uDBFF\uDFC3"
+                },
+                {
+                  "label": "Z°",
+                  "pua": "U+10FFC4",
+                  "pua_utf16": "\uDBFF\uDFC4"
+                }
+              ]
+            },
+            {
+              "label": "J",
+              "pua": "U+10FF94",
+              "pua_utf16": "\uDBFF\uDF94",
+              "long_press_variants": [
+                {
+                  "label": "JJ",
+                  "pua": "U+10FFC7",
+                  "pua_utf16": "\uDBFF\uDFC7"
+                }
+              ]
+            },
+            {
+              "label": "DJ",
+              "pua": "U+10FF95",
+              "pua_utf16": "\uDBFF\uDF95",
+              "long_press_variants": [
+                {
+                  "label": "DJDJ",
+                  "pua": "U+10FFC8",
+                  "pua_utf16": "\uDBFF\uDFC8"
+                },
+                {
+                  "label": "DJ°",
+                  "pua": "U+10FFC9",
+                  "pua_utf16": "\uDBFF\uDFC9"
+                }
+              ]
+            },
+            {
+              "label": "Ɲ",
+              "pua": "U+10FF96",
+              "pua_utf16": "\uDBFF\uDF96",
+              "long_press_variants": [
+                {
+                  "label": "ƝƝ",
+                  "pua": "U+10FFCA",
+                  "pua_utf16": "\uDBFF\uDFCA"
+                }
+              ]
+            },
+            {
+              "label": "Y",
+              "pua": "U+10FF97",
+              "pua_utf16": "\uDBFF\uDF97",
+              "long_press_variants": [
+                {
+                  "label": "YY",
+                  "pua": "U+10FFCB",
+                  "pua_utf16": "\uDBFF\uDFCB"
+                },
+                {
+                  "label": "Y°",
+                  "pua": "U+10FFCC",
+                  "pua_utf16": "\uDBFF\uDFCC"
+                }
+              ]
+            },
+            {
+              "label": "G",
+              "pua": "U+10FF98",
+              "pua_utf16": "\uDBFF\uDF98",
+              "long_press_variants": [
+                {
+                  "label": "GG",
+                  "pua": "U+10FFCD",
+                  "pua_utf16": "\uDBFF\uDFCD"
+                },
+                {
+                  "label": "G°",
+                  "pua": "U+10FFCE",
+                  "pua_utf16": "\uDBFF\uDFCE"
+                }
+              ]
+            },
+            {
+              "label": "Ŋ",
+              "pua": "U+10FF9B",
+              "pua_utf16": "\uDBFF\uDF9B",
+              "long_press_variants": [
+                {
+                  "label": "ŊŊ",
+                  "pua": "U+10FFD1",
+                  "pua_utf16": "\uDBFF\uDFD1"
+                },
+                {
+                  "label": "Ŋ°",
+                  "pua": "U+10FFD2",
+                  "pua_utf16": "\uDBFF\uDFD2"
+                }
+              ]
+            },
+            {
+              "type": "action",
+              "action": "enter",
+              "label": "↴",
+              "unicode": null,
+              "width": 1.25
+            }
+          ]
+        },
+        {
+          "row_index": 4,
+          "visual_order": "RIGHT_TO_LEFT",
+          "description": "Ordre visuel gauche->droite : switch, virgule, emoji, espace, point, entrée (bascule/entrée non mirroirés, cf. AynehaToolbarView/mockups).",
+          "keys": [
+            {
+              "type": "action",
+              "action": "enter",
+              "label": "↴",
+              "width": 1.5
+            },
+            {
+              "label": ".",
+              "unicode": "U+002E",
+              "width": 1.0
+            },
+            {
+              "type": "space",
+              "label": "AYNEHA",
+              "unicode": "U+0020",
+              "width": 4.5
+            },
+            {
+              "type": "switch_view",
+              "target_view": "emoji",
+              "label": "😊",
+              "width": 1.0
+            },
+            {
+              "label": "⹁",
+              "pua": "U+10FFDC",
+              "pua_utf16": "\uDBFF\uDFDC",
+              "width": 1.0
+            },
+            {
+              "type": "switch_view",
+              "target_view": "symbols_page1",
+              "label": "؟321",
+              "width": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    "symbols_page1": {
+      "title": "Page Symboles et Chiffres AYNEHA",
+      "direction": "rtl",
+      "rows": [
+        {
+          "row_index": 1,
+          "visual_order": "RIGHT_TO_LEFT",
+          "description": "Chiffres en ordre RTL (1 à droite, 0 à gauche)",
+          "keys": [
+            {
+              "label": "1",
+              "pua": "U+10FF7D",
+              "pua_utf16": "\uDBFF\uDF7D"
+            },
+            {
+              "label": "2",
+              "pua": "U+10FF7E",
+              "pua_utf16": "\uDBFF\uDF7E"
+            },
+            {
+              "label": "3",
+              "pua": "U+10FF7F",
+              "pua_utf16": "\uDBFF\uDF7F"
+            },
+            {
+              "label": "4",
+              "pua": "U+10FF80",
+              "pua_utf16": "\uDBFF\uDF80"
+            },
+            {
+              "label": "5",
+              "pua": "U+10FF81",
+              "pua_utf16": "\uDBFF\uDF81"
+            },
+            {
+              "label": "6",
+              "pua": "U+10FF82",
+              "pua_utf16": "\uDBFF\uDF82"
+            },
+            {
+              "label": "7",
+              "pua": "U+10FF83",
+              "pua_utf16": "\uDBFF\uDF83"
+            },
+            {
+              "label": "8",
+              "pua": "U+10FF84",
+              "pua_utf16": "\uDBFF\uDF84"
+            },
+            {
+              "label": "9",
+              "pua": "U+10FF85",
+              "pua_utf16": "\uDBFF\uDF85"
+            },
+            {
+              "label": "0",
+              "pua": "U+10FF7C",
+              "pua_utf16": "\uDBFF\uDF7C"
+            }
+          ],
+          "mirror": true
+        },
+        {
+          "row_index": 2,
+          "visual_order": "RIGHT_TO_LEFT",
+          "keys": [
+            {
+              "label": "⁏",
+              "pua": "U+10FFDD",
+              "pua_utf16": "\uDBFF\uDFDD"
+            },
+            {
+              "label": "'",
+              "unicode": "U+0027",
+              "mirror": true
+            },
+            {
+              "label": ":",
+              "unicode": "U+003A"
+            },
+            {
+              "label": "...",
+              "unicode": "U+2026"
+            },
+            {
+              "label": "!",
+              "unicode": "U+0021"
+            },
+            {
+              "label": "؟",
+              "unicode": "U+061F"
+            },
+            {
+              "label": "»",
+              "unicode": "U+00BB"
+            },
+            {
+              "label": "«",
+              "unicode": "U+00AB"
+            },
+            {
+              "label": "(",
+              "unicode": "U+0028"
+            },
+            {
+              "label": ")",
+              "unicode": "U+0029"
+            }
+          ],
+          "mirror": true
+        },
+        {
+          "row_index": 3,
+          "visual_order": "RIGHT_TO_LEFT",
+          "keys": [
+            {
+              "type": "switch_view",
+              "target_view": "numpad",
+              "label": "=\\<",
+              "width": 1.25
+            },
+            {
+              "label": "@",
+              "unicode": "U+0040"
+            },
+            {
+              "label": "#",
+              "unicode": "U+0023"
+            },
+            {
+              "label": "€",
+              "unicode": "U+20AC"
+            },
+            {
+              "label": "&",
+              "unicode": "U+0026"
+            },
+            {
+              "label": "_",
+              "unicode": "U+005F"
+            },
+            {
+              "label": "%",
+              "unicode": "U+0025"
+            },
+            {
+              "label": "+",
+              "unicode": "U+002B"
+            },
+            {
+              "label": "-",
+              "unicode": "U+002D"
+            },
+            {
+              "label": "/",
+              "unicode": "U+002F"
+            },
+            {
+              "type": "action",
+              "action": "backspace",
+              "label": "⌦",
+              "unicode": null,
+              "width": 1.25
+            }
+          ],
+          "mirror": true
+        },
+        {
+          "row_index": 4,
+          "visual_order": "RIGHT_TO_LEFT",
+          "keys": [
+            {
+              "type": "action",
+              "action": "enter",
+              "label": "↴",
+              "width": 1.5
+            },
+            {
+              "label": ".",
+              "unicode": "U+002E",
+              "width": 1.0
+            },
+            {
+              "type": "space",
+              "label": "AYNEHA",
+              "unicode": "U+0020",
+              "width": 4.5
+            },
+            {
+              "type": "switch_view",
+              "target_view": "emoji",
+              "label": "😊",
+              "width": 1.0
+            },
+            {
+              "label": "⹁",
+              "pua": "U+10FFDC",
+              "pua_utf16": "\uDBFF\uDFDC",
+              "width": 1.0
+            },
+            {
+              "type": "switch_view",
+              "target_view": "alphabet",
+              "label": "IEA",
+              "width": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    "numpad": {
+      "title": "Pavé Numérique AYNEHA RTL",
+      "direction": "rtl",
+      "rows": [
+        {
+          "row_index": 1,
+          "visual_order": "RIGHT_TO_LEFT",
+          "keys": [
+            {
+              "label": "1",
+              "pua": "U+10FF7D",
+              "pua_utf16": "\uDBFF\uDF7D"
+            },
+            {
+              "label": "2",
+              "pua": "U+10FF7E",
+              "pua_utf16": "\uDBFF\uDF7E"
+            },
+            {
+              "label": "3",
+              "pua": "U+10FF7F",
+              "pua_utf16": "\uDBFF\uDF7F"
+            },
+            {
+              "label": "÷",
+              "unicode": "U+00F7"
+            }
+          ],
+          "mirror": true
+        },
+        {
+          "row_index": 2,
+          "visual_order": "RIGHT_TO_LEFT",
+          "keys": [
+            {
+              "label": "4",
+              "pua": "U+10FF80",
+              "pua_utf16": "\uDBFF\uDF80"
+            },
+            {
+              "label": "5",
+              "pua": "U+10FF81",
+              "pua_utf16": "\uDBFF\uDF81"
+            },
+            {
+              "label": "6",
+              "pua": "U+10FF82",
+              "pua_utf16": "\uDBFF\uDF82"
+            },
+            {
+              "label": "×",
+              "unicode": "U+00D7"
+            }
+          ],
+          "mirror": true
+        },
+        {
+          "row_index": 3,
+          "visual_order": "RIGHT_TO_LEFT",
+          "keys": [
+            {
+              "label": "7",
+              "pua": "U+10FF83",
+              "pua_utf16": "\uDBFF\uDF83"
+            },
+            {
+              "label": "8",
+              "pua": "U+10FF84",
+              "pua_utf16": "\uDBFF\uDF84"
+            },
+            {
+              "label": "9",
+              "pua": "U+10FF85",
+              "pua_utf16": "\uDBFF\uDF85"
+            },
+            {
+              "label": "+",
+              "unicode": "U+002B"
+            }
+          ],
+          "mirror": true
+        },
+        {
+          "row_index": 4,
+          "visual_order": "RIGHT_TO_LEFT",
+          "keys": [
+            {
+              "label": ".",
+              "unicode": "U+002E"
+            },
+            {
+              "label": "0",
+              "pua": "U+10FF7C",
+              "pua_utf16": "\uDBFF\uDF7C"
+            },
+            {
+              "label": "%",
+              "unicode": "U+0025"
+            },
+            {
+              "label": "-",
+              "unicode": "U+002D"
+            }
+          ],
+          "mirror": true
+        },
+        {
+          "row_index": 5,
+          "keys": [
+            {
+              "type": "action",
+              "action": "enter",
+              "label": "↴",
+              "width": 1.5
+            },
+            {
+              "type": "char",
+              "label": ".",
+              "unicode": "U+002E",
+              "width": 1.0
+            },
+            {
+              "type": "space",
+              "label": "AYNEHA",
+              "width": 4.5
+            },
+            {
+              "type": "switch_view",
+              "target_view": "emoji",
+              "label": "😊",
+              "width": 1.0
+            },
+            {
+              "type": "char",
+              "label": "⹁",
+              "pua": "U+10FFDC",
+              "pua_utf16": "\uDBFF\uDFDC",
+              "width": 1.0
+            },
+            {
+              "type": "switch_view",
+              "target_view": "alphabet",
+              "label": "IEA",
+              "width": 1.5
+            }
+          ]
+        }
+      ]
+    },
+    "emoji": {
+      "title": "Page Emoji AYNEHA",
+      "rows": [
+        {
+          "row_index": 1,
+          "mirror": false,
+          "keys": [
+            {
+              "type": "char",
+              "label": "😀"
+            },
+            {
+              "type": "char",
+              "label": "😃"
+            },
+            {
+              "type": "char",
+              "label": "😄"
+            },
+            {
+              "type": "char",
+              "label": "😁"
+            },
+            {
+              "type": "char",
+              "label": "😆"
+            },
+            {
+              "type": "char",
+              "label": "😅"
+            },
+            {
+              "type": "char",
+              "label": "😂"
+            },
+            {
+              "type": "char",
+              "label": "🤣"
+            }
+          ]
+        },
+        {
+          "row_index": 2,
+          "mirror": false,
+          "keys": [
+            {
+              "type": "char",
+              "label": "😊"
+            },
+            {
+              "type": "char",
+              "label": "😇"
+            },
+            {
+              "type": "char",
+              "label": "🙂"
+            },
+            {
+              "type": "char",
+              "label": "🙃"
+            },
+            {
+              "type": "char",
+              "label": "😉"
+            },
+            {
+              "type": "char",
+              "label": "😌"
+            },
+            {
+              "type": "char",
+              "label": "😍"
+            },
+            {
+              "type": "char",
+              "label": "🥰"
+            }
+          ]
+        },
+        {
+          "row_index": 3,
+          "mirror": false,
+          "keys": [
+            {
+              "type": "char",
+              "label": "😘"
+            },
+            {
+              "type": "char",
+              "label": "😗"
+            },
+            {
+              "type": "char",
+              "label": "😙"
+            },
+            {
+              "type": "char",
+              "label": "😚"
+            },
+            {
+              "type": "char",
+              "label": "😋"
+            },
+            {
+              "type": "char",
+              "label": "😛"
+            },
+            {
+              "type": "char",
+              "label": "😝"
+            },
+            {
+              "type": "char",
+              "label": "😜"
+            }
+          ]
+        },
+        {
+          "row_index": 4,
+          "mirror": false,
+          "keys": [
+            {
+              "type": "char",
+              "label": "🤪"
+            },
+            {
+              "type": "char",
+              "label": "🤨"
+            },
+            {
+              "type": "char",
+              "label": "🧐"
+            },
+            {
+              "type": "char",
+              "label": "🤓"
+            },
+            {
+              "type": "char",
+              "label": "😎"
+            },
+            {
+              "type": "char",
+              "label": "🥳"
+            },
+            {
+              "type": "char",
+              "label": "😏"
+            },
+            {
+              "type": "char",
+              "label": "😒"
+            }
+          ]
+        },
+        {
+          "row_index": 5,
+          "mirror": false,
+          "keys": [
+            {
+              "type": "char",
+              "label": "😞"
+            },
+            {
+              "type": "char",
+              "label": "😔"
+            },
+            {
+              "type": "char",
+              "label": "😟"
+            },
+            {
+              "type": "char",
+              "label": "😕"
+            },
+            {
+              "type": "char",
+              "label": "🙁"
+            },
+            {
+              "type": "char",
+              "label": "☹️"
+            },
+            {
+              "type": "char",
+              "label": "😣"
+            },
+            {
+              "type": "char",
+              "label": "😢"
+            }
+          ]
+        },
+        {
+          "row_index": 6,
+          "keys": [
+            {
+              "type": "action",
+              "action": "enter",
+              "label": "↴",
+              "width": 1.5
+            },
+            {
+              "type": "char",
+              "label": ".",
+              "unicode": "U+002E",
+              "width": 1.0
+            },
+            {
+              "type": "space",
+              "label": "AYNEHA",
+              "width": 4.5
+            },
+            {
+              "type": "switch_view",
+              "target_view": "emoji",
+              "label": "😊",
+              "width": 1.0
+            },
+            {
+              "type": "char",
+              "label": "⹁",
+              "pua": "U+10FFDC",
+              "pua_utf16": "\uDBFF\uDFDC",
+              "width": 1.0
+            },
+            {
+              "type": "switch_view",
+              "target_view": "alphabet",
+              "label": "IEA",
+              "width": 1.5
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
